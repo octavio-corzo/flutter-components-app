@@ -13,4 +13,16 @@ class AppTheme {
       elevation: 0,
     ),
   );
+
+  static final ThemeData DarkTheme = ThemeData.light().copyWith(
+    //Color primario
+    primaryColor: Colors.indigo,
+
+    //AppBar Theme
+    appBarTheme: const AppBarTheme(
+      color: primary,
+      elevation: 0,
+    ),
+    scaffoldBackgroundColor: Colors.black,
+  );
 }

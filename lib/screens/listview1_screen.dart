@@ -9,7 +9,10 @@ class ListView1Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Listview tipo 1"),
+        title: const Text(
+          "Listview tipo 1",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: ListView(children: [
         ...options

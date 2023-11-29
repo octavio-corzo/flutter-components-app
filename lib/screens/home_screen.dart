@@ -11,7 +11,10 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Componentes en Flutter'),
+        title: const Text(
+          'Componentes en Flutter',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: ListView.separated(
         itemBuilder: (context, index) => ListTile(
@@ -21,10 +24,6 @@ class HomeScreen extends StatelessWidget {
           ),
           title: Text(menuOptions[index].name),
           onTap: () {
-            // final route = MaterialPageRoute(
-            //     builder: (context) => const ListView1Screen());
-
-            // Navigator.push(context, route);
             Navigator.pushNamed(context, menuOptions[index].route);
           },
         ),
