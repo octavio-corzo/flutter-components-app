@@ -7,7 +7,7 @@ class AppRoutes {
   static const initialRoute = 'home';
 
   static final menuOptions = <MenuOption>[
-    //TODO: borrar home
+    // TODO: borrar home
     MenuOption(
       route: 'home',
       name: 'Home Screen',
@@ -38,6 +38,12 @@ class AppRoutes {
       screen: const CardScreen(),
       icon: Icons.credit_card,
     ),
+    MenuOption(
+      route: 'avatar',
+      name: 'Avatar Screen',
+      screen: const AvatarScreen(),
+      icon: Icons.supervised_user_circle_outlined,
+    ),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
@@ -49,14 +55,6 @@ class AppRoutes {
 
     return appRoutes;
   }
-
-  // static Map<String, Widget Function(BuildContext)> routes = {
-  //   'home': (BuildContext context) => const HomeScreen(),
-  //   'listView1': (BuildContext context) => const ListView1Screen(),
-  //   'listView2': (BuildContext context) => const ListView2Screen(),
-  //   'alert': (BuildContext context) => const AlertScreen(),
-  //   'card': (BuildContext context) => const CardScreen(),
-  // };
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     return MaterialPageRoute(
