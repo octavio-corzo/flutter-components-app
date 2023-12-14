@@ -14,6 +14,12 @@ class AppRoutes {
       icon: Icons.list,
     ),
     MenuOption(
+      route: 'inputs',
+      name: ' Text Inputs',
+      screen: const InputsScreen(),
+      icon: Icons.input_outlined,
+    ),
+    MenuOption(
       route: 'listview2',
       name: 'List View tipo 2',
       screen: const ListView2Screen(),
